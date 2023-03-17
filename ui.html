@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" data-template-name="ui">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ui</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+  <link href="css/app.css" rel="stylesheet"></head>
+  <body>
+    <div class="preloader"></div>
+    <header class="header lockPadding">
+      <div class="header__in">
+        <div class="header__logo"><img class="header__logo_img" src="images/logo.svg" alt="logo"></div>
+        <div class="header__btn">
+          <div class="header__btn_item"><a class="btn btn__small btn__dark popupOpen" href="#popup_login">Вхід</a></div>
+          <div class="header__btn_item"><a class="btn btn__small btn__primary popupOpen" href="#popup_registration">Реєстрація</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <section class="section section_ui">
+          <div class="section_in">
+            <div class="section_ui__block">
+              <h1 class="section_ui__title">Ui page</h1>
+              <div class="section_ui__text">This page is for showing project titles, buttons, forms, components.</div>
+            </div>
+            <div class="section_ui__block">
+              <h3 class="section_ui__category">Typography</h3>
+              <div class="section_ui__text">This section contains all text elements: titles, texts.</div>
+              <div class="ui_typography__line">
+                <div class="ui_typography__item">Text style</div>
+                <div class="ui_typography__item">Size</div>
+                <div class="ui_typography__item">Weight</div>
+              </div>
+              <ul class="ui_typography">
+                <li class="ui_typography__line">
+                  <div class="ui_typography__item">
+                    <h1 class="ui_typography__title">h1</h1>
+                  </div>
+                  <div class="ui_typography__item">72</div>
+                  <div class="ui_typography__item">700</div>
+                </li>
+                <li class="ui_typography__line">
+                  <div class="ui_typography__item">
+                    <h2 class="ui_typography__title">h2</h2>
+                  </div>
+                  <div class="ui_typography__item">56</div>
+                  <div class="ui_typography__item">700</div>
+                </li>
+                <li class="ui_typography__line">
+                  <div class="ui_typography__item">
+                    <h3 class="ui_typography__title">h3</h3>
+                  </div>
+                  <div class="ui_typography__item">40</div>
+                  <div class="ui_typography__item">500</div>
+                </li>
+                <li class="ui_typography__line">
+                  <div class="ui_typography__item">
+                    <h4 class="ui_typography__title">h4</h4>
+                  </div>
+                  <div class="ui_typography__item">32</div>
+                  <div class="ui_typography__item">400</div>
+                </li>
+                <li class="ui_typography__line">
+                  <div class="ui_typography__item">
+                    <h5 class="ui_typography__title">h5</h5>
+                  </div>
+                  <div class="ui_typography__item">24</div>
+                  <div class="ui_typography__item">400</div>
+                </li>
+                <li class="ui_typography__line">
+                  <div class="ui_typography__item">
+                    <h6 class="ui_typography__title">h6</h6>
+                  </div>
+                  <div class="ui_typography__item">20</div>
+                  <div class="ui_typography__item">400</div>
+                </li>
+                <li class="ui_typography__line">
+                  <div class="ui_typography__item">
+                    <div class="ui_typography__text">Text</div>
+                  </div>
+                  <div class="ui_typography__item">18</div>
+                  <div class="ui_typography__item">400</div>
+                </li>
+              </ul>
+            </div>
+            <div class="section_ui__block section_ui__block--color_mod">
+              <h3 class="section_ui__category">Buttons</h3>
+              <div class="section_ui__text">This section contains all buttons.</div>
+              <div class="ui_buttons_wrap">
+                <div class="ui_buttons_row">
+                  <div class="ui_buttons_row__in">
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__primary" href="#">Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__primary" href="#">Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__primary" href="#">
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__primary" href="#">
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__primary" href="#"><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__primary" href="#"><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__small btn__primary" href="#">
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__medium btn__primary" href="#">
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="ui_buttons_row">
+                  <div class="ui_buttons_row__in">
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__light" href="#">Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__light" href="#">Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__light" href="#">
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__light" href="#">
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__light" href="#"><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__light" href="#"><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__small btn__light" href="#">
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__medium btn__light" href="#">
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="ui_buttons_row">
+                  <div class="ui_buttons_row__in">
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__dark" href="#">Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__dark" href="#">Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__dark" href="#">
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__dark" href="#">
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__dark" href="#"><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__dark" href="#"><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__small btn__dark" href="#">
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__medium btn__dark" href="#">
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="ui_buttons_row">
+                  <div class="ui_buttons_row__in">
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__primary" href="#" disabled>Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__primary" href="#" disabled>Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__primary" href="#" disabled>
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__primary" href="#" disabled>
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__primary" href="#" disabled><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__primary" href="#" disabled><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__small btn__primary" href="#" disabled>
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__medium btn__primary" href="#" disabled>
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="ui_buttons_row">
+                  <div class="ui_buttons_row__in">
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__light" href="#" disabled>Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__light" href="#" disabled>Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__light" href="#" disabled>
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__light" href="#" disabled>
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__light" href="#" disabled><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__light" href="#" disabled><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__small btn__light" href="#" disabled>
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__medium btn__light" href="#" disabled>
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="ui_buttons_row">
+                  <div class="ui_buttons_row__in">
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__dark" href="#" disabled>Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__dark" href="#" disabled>Button</a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__dark" href="#" disabled>
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__dark" href="#" disabled>
+                        <div class="btn__icon btn__icon--left_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div><span>Button</span></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__small btn__dark" href="#" disabled><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn btn__medium btn__dark" href="#" disabled><span>Button</span>
+                        <div class="btn__icon btn__icon--right_mod">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__small btn__dark" href="#" disabled>
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                    <div class="ui_buttons__item"><a class="btn_only_icon btn__medium btn__dark" href="#" disabled>
+                        <div class="btn__icon">
+                          <svg class="icon icon_star icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#star"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section_ui__block">
+              <h3 class="section_ui__category">Forms</h3>
+              <div class="section_ui__text">This section contains all form items: inputs, selects, textareas, checkboxes, radio buttons.</div>
+              <form class="ui_form">
+                <ul class="ui_form__list">
+                  <li class="ui_form__item">
+                    <div class="form_input">
+                      <label class="form_input__label" for="input_1">Default input 1</label>
+                      <div class="form_input__field">
+                        <input class="form_input__element" type="text" id="input_1" placeholder="Placeholder" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="ui_form__item">
+                    <div class="form_input">
+                      <label class="form_input__label" for="input_1">Default input 2</label>
+                      <div class="form_input__field">
+                        <input class="form_input__element" type="text" id="input_1" placeholder="Placeholder" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="ui_form__item ui_form__item--full_mod">
+                    <div class="form_textarea">
+                      <label class="form_textarea__label" for="textarea_1">Default textarea</label>
+                      <div class="form_textarea__field">
+                        <textarea class="form_textarea__element" placeholder="Placeholder"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="ui_form__item">
+                    <div class="form_select">
+                      <label class="form_select__label" for="select_1">Default select 1</label>
+                      <div class="form_select__field">
+                        <select class="form_select__element">
+                          <option value='{"title":"item"}'>item</option>
+                          <option value='{"title":"value"}'>value</option>
+                          <option value='{"title":"hello"}'>hello</option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="ui_form__item">
+                    <div class="form_select">
+                      <label class="form_select__label" for="select_1">Default select 2</label>
+                      <div class="form_select__field">
+                        <select class="form_select__element">
+                          <option value='{"title":"item"}'>item</option>
+                          <option value='{"title":"value"}'>value</option>
+                          <option value='{"title":"hello"}'>hello</option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="ui_form__item">
+                    <div class="ui_form__title">Checkboxes</div>
+                    <div class="ui_form__subitem">
+                      <div class="form_checkbox">
+                        <label class="form_checkbox__block">
+                          <input class="form_checkbox__element" type="checkbox"><span class="form_checkbox__label">checkbox label 1</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="ui_form__subitem">
+                      <div class="form_checkbox">
+                        <label class="form_checkbox__block">
+                          <input class="form_checkbox__element" type="checkbox"><span class="form_checkbox__label">checkbox label 2</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="ui_form__item">
+                    <div class="ui_form__title">Radio buttons</div>
+                    <div class="ui_form__subitem">
+                      <div class="form_radio">
+                        <label class="form_radio__block">
+                          <input class="form_radio__element" type="radio" name="radio_1"><span class="form_radio__label">radio label 1</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="ui_form__subitem">
+                      <div class="form_radio">
+                        <label class="form_radio__block">
+                          <input class="form_radio__element" type="radio" name="radio_1"><span class="form_radio__label">radio label 2</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="section_ui__block">
+              <h3 class="section_ui__category">Components</h3>
+              <div class="section_ui__text">This section contains all components.</div>
+              <ul class="ui_components">
+                <li class="ui_components__item">
+                  <h4 class="ui_components__title">Component name (include)</h4>
+                </li>
+                <li class="ui_components__item">
+                  <h4 class="ui_components__title">Component name (mixin)</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="card_popup popupCard" id="popup_registration">
+      <div class="card_popup__in">
+        <div class="card_popup__content_wrap popupCardContent">
+          <button class="card_popup__close popupCardClose" type="button" aria-label="close">
+            <div class="card_popup__close_icon">
+              <svg class="icon icon_close icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#close"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="card_popup__content">
+            <div class="card_popup__content_col card_popup__content_col--v1_mod">
+              <div class="card_popup__content_decor_top"><img src="images/graph_slider.svg" alt="popup decor"></div>
+              <div class="card_popup__content_decor_bottom"><img src="images/lines_slider.svg" alt="popup decor"></div>
+              <div class="card_popup__content_col_in">
+                <div class="slider">
+                  <div class="swiper sliderInit">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slider_item">
+                          <div class="slider_item__title">Зможеш обрати свій варіант № 1</div>
+                          <div class="slider_item__content">
+                            <ul class="slider_item__list">
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">CPA</div>
+                                  <div class="slider_item__list_text_descrip">$25 і вище</div>
+                                </div>
+                              </li>
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">REVSHARE</div>
+                                  <div class="slider_item__list_text_descrip">Піднімай до 60%</div>
+                                </div>
+                              </li>
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">Гібрід</div>
+                                  <div class="slider_item__list_text_descrip">Зробимо як скажеш</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider_item">
+                          <div class="slider_item__title">Зможеш обрати свій варіант № 2</div>
+                          <div class="slider_item__content">
+                            <ul class="slider_item__list">
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">CPA</div>
+                                  <div class="slider_item__list_text_descrip">$25 і вище</div>
+                                </div>
+                              </li>
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">REVSHARE</div>
+                                  <div class="slider_item__list_text_descrip">Піднімай до 60%</div>
+                                </div>
+                              </li>
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">Гібрід</div>
+                                  <div class="slider_item__list_text_descrip">Зробимо як скажеш</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider_item">
+                          <div class="slider_item__title">Зможеш обрати свій варіант № 3</div>
+                          <div class="slider_item__content">
+                            <ul class="slider_item__list">
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">CPA</div>
+                                  <div class="slider_item__list_text_descrip">$25 і вище</div>
+                                </div>
+                              </li>
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">REVSHARE</div>
+                                  <div class="slider_item__list_text_descrip">Піднімай до 60%</div>
+                                </div>
+                              </li>
+                              <li class="slider_item__list_item">
+                                <div class="slider_item__list_pic">
+                                  <div class="slider_item__list_icon">
+                                    <svg class="icon icon_check icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="slider_item__list_text">
+                                  <div class="slider_item__list_text_title">Гібрід</div>
+                                  <div class="slider_item__list_text_descrip">Зробимо як скажеш</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__controls">
+                    <button class="slider__btn prevArrow">
+                      <div class="slider__btn_icon">
+                        <svg class="icon icon_arrow_left icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_left"></use>
+                        </svg>
+                      </div>
+                    </button>
+                    <div class="slider__pagination pagination"></div>
+                    <button class="slider__btn nextArrow">
+                      <div class="slider__btn_icon">
+                        <svg class="icon icon_arrow_right icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_right"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card_popup__content_col card_popup__content_col--v2_mod">
+              <div class="card_popup__head">
+                <div class="card_popup__head_icon_wrap card_popup__head_icon_wrap--color_green_mod">
+                  <div class="card_popup__head_icon">
+                    <svg class="icon icon_user icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#user"></use>
+                    </svg>
+                  </div>
+                </div>
+                <h2 class="card_popup__head_title">Реєстрація</h2>
+              </div>
+              <form class="card_popup__form">
+                <div class="card_popup__regist">
+                  <div class="card_popup_form__block">
+                    <div class="form_input__field">
+                      <input class="card_popup_form__input" type="text" id="card_popup_form__input_v0" placeholder="Ваше імʼя" required>
+                    </div>
+                  </div>
+                  <div class="card_popup_form__block">
+                    <div class="form_input__field">
+                      <input class="card_popup_form__input" type="text" id="card_popup_form__input_v1" placeholder="Ваш email" required>
+                    </div>
+                  </div>
+                  <div class="card_popup_form__block_password">
+                    <input class="card_popup_form__input card_popup_form__input--password_mod" id="popup_reg_password" type="password" placeholder="Ваш пароль">
+                    <button class="card_popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password">
+                      <svg class="icon icon_eye icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#eye"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card_popup_form__block_password">
+                    <input class="card_popup_form__input card_popup_form__input--password_mod" id="popup_reg_password_repeat" type="password" placeholder="Повторіть пароль">
+                    <button class="card_popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password_repeat">
+                      <svg class="icon icon_eye icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#eye"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card_popup__bottom">
+                  <div class="card_popup__bottom_title">Оберіть спосіб звязку</div>
+                  <div class="card_popup__bottom_social"><a class="card_popup__bottom_social_item" href="#">
+                      <div class="card_popup__bottom_social_icon">
+                        <svg class="icon icon_telegram icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#telegram"></use>
+                        </svg>
+                      </div></a><a class="card_popup__bottom_social_item" href="#">
+                      <div class="card_popup__bottom_social_icon">
+                        <svg class="icon icon_skype icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#skype"></use>
+                        </svg>
+                      </div></a>
+                    <div class="card_popup_form__block">
+                      <div class="form_input__field">
+                        <input class="card_popup_form__input" type="text" id="card_popup_form__input_telegram" placeholder="@телеграм_адреса" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card_popup__btn_wrap">
+                  <button class="btn btn__primary btn__medium" type="submit">Реєстрація</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card_popup popupCard" id="popup_login">
+      <div class="card_popup__in">
+        <div class="card_popup__content_wrap popupCardContent">
+          <button class="card_popup__close popupCardClose" type="button" aria-label="close">
+            <div class="card_popup__close_icon">
+              <svg class="icon icon_close icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#close"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="card_popup__logon_wrap">
+            <div class="card_popup__head">
+              <div class="card_popup__head_icon_wrap card_popup__head_icon_wrap--color_orange_mod">
+                <div class="card_popup__head_icon">
+                  <svg class="icon icon_lock icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#lock"></use>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="card_popup__head_title">Вхід</h3>
+            </div>
+            <form class="card_popup__form">
+              <div class="card_popup_form__block">
+                <div class="form_input__field">
+                  <input class="card_popup_form__input" type="text" id="card_popup_form__input" placeholder="Ваш email" required>
+                </div>
+              </div>
+              <div class="card_popup_form__block_password">
+                <input class="card_popup_form__input card_popup_form__input--password_mod" id="card_popup_form__password" type="password" placeholder="Ваш пароль">
+                <button class="card_popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="card_popup_form__password">
+                  <svg class="icon icon_eye icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#eye"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card_popup__btn_wrap">
+                <button class="btn btn__primary btn__medium" type="submit">Війти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script defer src="js/app.js"></script></body>
+</html>
