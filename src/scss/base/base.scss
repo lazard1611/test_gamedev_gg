@@ -1,0 +1,259 @@
+@import 'family';
+@import 'reset';
+@import 'fonts';
+@import 'print';
+
+//------------------------------------------------------------base styles
+:root {
+	--full-screen: calc(var(--vh, 1vh) * 100);
+	--height-footer: 10rem;
+
+	@include bp($point_4, min) {
+		--gl-indent: 2.4rem;
+		--height-header: 9.2rem;
+	}
+
+	@include bp($point_4 - 1) {
+		--gl-indent: 1.5rem;
+		--height-header: 6rem;
+	}
+}
+
+html {
+	height: 100%;
+
+	@include bp($point_1, min) {
+		font: 400 calc(100vw / 1440 * 10) / 1.33 $font_1;
+	}
+
+	@include bp($point_1 - 1, $point_7) {
+		font-size: 10px;
+	}
+
+	@include bp($point_7 - 1) {
+		font: 400 calc(100vw / 375 * 10) / 1.33 $font_1;
+	}
+}
+
+body {
+	position: relative;
+
+	display: flex;
+	height: 100%;
+
+	font-size: $font_size_base;
+	color: $color_text_base;
+
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	background: $body_bg;
+
+	@supports (display: grid) {
+		display: block;
+	}
+
+	&.body--popup_open {
+		overflow: hidden;
+	}
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $white;
+
+	opacity: 1;
+	transition: opacity 0.3s;
+
+	z-index: 1000;
+
+	.body--loaded & {
+		pointer-events: none;
+		opacity: 0;
+	}
+}
+
+.wrapper {
+	position: relative;
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	height: auto !important;
+
+	overflow-x: hidden;
+}
+
+.base {
+	width: 100%;
+	position: relative;
+	padding: var(--height-header) 0 0;
+
+	flex: 1 0 auto;
+	overflow: hidden;
+
+	@include bp($point_4 - 1) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color_link_base;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+.main_decor {
+	position: absolute;
+	opacity: 0.4;
+
+	&.main_decor--pos_1_mod {
+		z-index: -1;
+
+		@include bp($point_4, min) {
+			top: 23rem;
+			right: -30.3rem;
+
+			width: 43.8rem;
+			height: 34.2rem;
+		}
+
+		@include bp($point_4 - 1) {
+			top: 19.1rem;
+			right: -9rem;
+
+			width: 12.8rem;
+			height: 10.7rem;
+		}
+	}
+
+	&.main_decor--pos_2_mod {
+		z-index: -2;
+
+		@include bp($point_4, min) {
+			top: 41.5rem;
+			right: -25rem;
+
+			width: 33.7rem;
+			height: 26.3rem;
+		}
+
+		@include bp($point_4 - 1) {
+			top: 24.5rem;
+			right: -7rem;
+
+			width: 10rem;
+			height: 8.2rem;
+		}
+	}
+
+	&.main_decor--pos_3_mod {
+		z-index: -3;
+
+		@include bp($point_4, min) {
+			top: 31.4rem;
+			right: -37rem;
+
+			width: 49.7rem;
+			height: 38rem;
+		}
+
+		@include bp($point_4 - 1) {
+			top: 21.6rem;
+			right: -11rem;
+
+			width: 14.6rem;
+			height: 11.9rem;
+		}
+	}
+
+	&.main_decor--pos_4_mod {
+		z-index: -1;
+
+		@include bp($point_4, min) {
+			bottom: 1rem;
+			left: -10rem;
+
+			width: 27.4rem;
+			height: 21.4rem;
+			transform: matrix(-1, -0.06, 0.07, -1, 0, 0);
+		}
+
+		@include bp($point_4 - 1) {
+			bottom: 44.5%;
+			left: -4rem;
+
+			width: 13.7rem;
+			height: 10.7rem;
+		}
+	}
+
+	&.main_decor--pos_5_mod {
+		z-index: -3;
+
+		@include bp($point_4, min) {
+			bottom: -6rem;
+			left: -9.8rem;
+
+			width: 31.1rem;
+			height: 23.7rem;
+		}
+
+		@include bp($point_4 - 1) {
+			bottom: 41%;
+			left: -3.8rem;
+
+			width: 15.6rem;
+			height: 11.9rem;
+		}
+	}
+
+	&.main_decor--pos_6_mod {
+		z-index: -2;
+
+		@include bp($point_4, min) {
+			bottom: -3rem;
+			left: -8.4rem;
+
+			width: 21.1rem;
+			height: 16.5rem;
+			transform: matrix(0.97, 0.24, -0.29, 0.96, 0, 0);
+		}
+
+		@include bp($point_4 - 1) {
+			bottom: 42%;
+			left: -2.4rem;
+
+			width: 10.6rem;
+			height: 8.2rem;
+		}
+	}
+
+	@include bp($point_4, min) {
+		filter: blur(10rem);
+	}
+
+	@include bp($point_4 - 1) {
+		filter: blur(5rem);
+	}
+}
+
+.main_decor__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+//------------------------------------------------------------base styles###

@@ -1,0 +1,30 @@
+mixin no_use(array)
+	.no_use
+//--------------------------------------------------------------global vars
+- environment = htmlWebpackPlugin.options.environment;
+- array = '';
+- assetsImage = 'images/';
+
+//--------------------------------------------------------------forms
+-
+	registration = {
+		id: 'popup_registration',
+		input_list: [
+			{
+				placeholder: 'Ваше імʼя',
+			},
+			{
+				placeholder: 'Ваш email',
+			},
+		],
+		type_password: [
+			{
+				placeholder: 'Ваш пароль',
+				id: 'popup_reg_password',
+			},
+			{
+				placeholder: 'Повторіть пароль',
+				id: 'popup_reg_password_repeat',
+			}
+		]
+	}

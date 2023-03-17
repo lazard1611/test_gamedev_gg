@@ -1,0 +1,26 @@
+section.section.section__hero
+	.section_in
+		.hero
+			.hero__bg
+				img.hero__bg_in(
+					src='images/graph.svg',
+					alt='head decor'
+				)
+			.hero__head
+				.hero__head_decor
+					img.hero__head_decor_img(
+						src='images/sign_horns_1.png',
+						alt='bg graph'
+					)
+				h1.hero__title Володарі Трафіку
+				.hero__head_decor
+					img.hero__head_decor_img(
+						src='images/sign_horns_2.png',
+						alt='head decor'
+					)
+			.hero__description
+				p SC Partners – нова партнерська мережа з величезним досвідом та експертизою. Кожен наш партнер отримує очікувану вигоду на абсолютно прозорих умовах та бездоганний супровід. Ми будемо поряд з вами: на відстані одного повідомлення в месенджері або дзвінка, адже ми працюємо поряд з вами.
+			.hero__decor
+				+loop_while(5)
+					.hero__decor_icon
+						+icon('star', 'icon--size_mod')

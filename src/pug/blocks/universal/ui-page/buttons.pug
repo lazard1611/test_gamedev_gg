@@ -1,0 +1,112 @@
+-
+	buttons = [
+		{
+			size: [
+				{
+					class: 'btn__small btn__primary',
+					state: false,
+				},
+				{
+					class: 'btn__medium btn__primary',
+					state: false,
+				},
+			],
+		},
+		{
+			size: [
+				{
+					class: 'btn__small btn__light',
+				},
+				{
+					class: 'btn__medium btn__light'
+				},
+			]
+		},
+		{
+			size: [
+				{
+					class: 'btn__small btn__dark',
+				},
+				{
+					class: 'btn__medium btn__dark'
+				},
+			]
+		},
+		{
+			size: [
+				{
+					class: 'btn__small btn__primary',
+					state: true,
+				},
+				{
+					class: 'btn__medium btn__primary',
+					state: true,
+				},
+			]
+		},
+		{
+			size: [
+				{
+					class: 'btn__small btn__light',
+					state: true,
+				},
+				{
+					class: 'btn__medium btn__light',
+					state: true,
+				},
+			]
+		},
+		{
+			size: [
+				{
+					class: 'btn__small btn__dark',
+					state: true,
+				},
+				{
+					class: 'btn__medium btn__dark',
+					state: true,
+				},
+			]
+		},
+	];
+
+.ui_buttons_wrap
+	each item in buttons
+		.ui_buttons_row
+			.ui_buttons_row__in
+				each button in item.size
+					.ui_buttons__item
+						a.btn(
+							href='#',
+							class=button.class,
+							disabled=button.state
+						) Button
+				each button in item.size
+					.ui_buttons__item
+						a.btn(
+							href='#',
+							class=button.class,
+							disabled=button.state
+						)
+							.btn__icon.btn__icon--left_mod
+								+icon('star', 'icon--size_mod')
+							span Button
+				each button in item.size
+					.ui_buttons__item
+						a.btn(
+							href='#',
+							class=button.class,
+							disabled=button.state
+						)
+							span Button
+							.btn__icon.btn__icon--right_mod
+								+icon('star', 'icon--size_mod')
+				each button in item.size
+					.ui_buttons__item
+						a.btn_only_icon(
+							href='#',
+							class=button.class,
+							disabled=button.state
+						)
+							.btn__icon
+								+icon('star', 'icon--size_mod')

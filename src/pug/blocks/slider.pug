@@ -1,0 +1,41 @@
+-
+	list= [
+		{
+			title: 'CPA',
+			descrip: '$25 і вище',
+		},
+		{
+			title: 'REVSHARE',
+			descrip: 'Піднімай до 60%',
+		},
+		{
+			title: 'Гібрід',
+			descrip: 'Зробимо як скажеш',
+		},
+	]
+
+.slider
+	.swiper.sliderInit
+		.swiper-wrapper
+			+loop_while(3)
+				.swiper-slide
+					.slider_item
+						.slider_item__title!= `Зможеш обрати свій варіант № ${i}`
+						.slider_item__content
+							ul.slider_item__list
+								each item in list
+									li.slider_item__list_item
+										.slider_item__list_pic
+											.slider_item__list_icon
+												+icon('check', 'icon--size_mod')
+										.slider_item__list_text
+											.slider_item__list_text_title!= item.title
+											.slider_item__list_text_descrip!= item.descrip
+	.slider__controls
+		button.slider__btn.prevArrow
+			.slider__btn_icon
+				+icon('arrow_left', 'icon--size_mod')
+		.slider__pagination.pagination
+		button.slider__btn.nextArrow
+			.slider__btn_icon
+				+icon('arrow_right', 'icon--size_mod')

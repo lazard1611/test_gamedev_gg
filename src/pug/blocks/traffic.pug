@@ -1,0 +1,32 @@
+-
+	items = [
+		{
+			icon: 'megaphone',
+			title: 'Круті акції, призи та прибуткова бонусна програма',
+			descrip: 'Ми постійно працюємо над тим, щоб вам було цікаво та вигідно!',
+		},
+		{
+			icon: 'smile',
+			title: 'Особлива підтримка для кожного 24/7',
+			descrip: 'У вас буде свій персональний менеджер',
+		},
+		{
+			icon: 'chart_bar',
+			title: 'Детальна статистика',
+			descrip: 'Миттєве оновлення, зрозуміла система відображення статистики',
+		},
+	]
+section.section.section__traffic
+	.section_in
+		.traffic
+			h2.traffic__title Тим, хто нагоняє Траф
+			ul.traffic__list
+				each item in items
+					li.traffic__item
+						.traffic__item_in
+							.traffic__item_pic
+								.traffic__item_icon
+									+icon(item.icon, 'icon--size_mod')
+							.traffic__item_content
+								.traffic__item_title!= item.title
+								.traffic__item_description!= item.descrip

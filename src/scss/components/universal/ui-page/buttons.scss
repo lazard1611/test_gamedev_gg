@@ -1,0 +1,78 @@
+.ui_buttons_wrap {
+}
+
+.ui_buttons_row {
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+
+.ui_buttons_row__in {
+	margin: 0 -2rem -2rem 0;
+
+	@include flex_block(row, wrap, flex-start, center, center);
+}
+
+.ui_buttons__item {
+	padding: 0 2rem 2rem 0;
+}
+
+.btn {
+	&.btn__small {
+		@include btn_size_small;
+	}
+
+	&.btn__medium {
+		@include btn_size_medium;
+	}
+
+	&.btn__primary {
+		@include btn_style_primary;
+	}
+
+	&.btn__light {
+		@include btn_style_light;
+	}
+
+	&.btn__dark {
+		@include btn_style_dark;
+	}
+
+	&.btn__disabled {
+		pointer-events: none;
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+}
+
+.btn__icon {
+	.btn & {
+		width: 1.6rem;
+		height: 1.6rem;
+
+		&:not(.btn__icon--left_mod) {
+			margin-left: 1.2rem;
+		}
+
+		&:not(.btn__icon--right_mod) {
+			margin-right: 1.2rem;
+		}
+	}
+
+	.btn_only_icon & {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+}
+
+.btn_only_icon {
+	&.btn__small {
+		@include btn_style_primary;
+		@include btn_only_icon_size_small;
+	}
+
+	&.btn__medium {
+		@include btn_style_primary;
+		@include btn_only_icon_size_medium;
+	}
+}

@@ -1,0 +1,15 @@
+mixin header
+	header.header.lockPadding
+		.header__in
+			.header__logo
+				img.header__logo_img(
+					src='images/logo.svg',
+					alt='logo'
+				)
+			.header__btn
+				.header__btn_item
+					a.btn.btn__small.btn__dark.popupOpen(href='#popup_login') Вхід
+				.header__btn_item
+					a.btn.btn__small.btn__primary.popupOpen(
+						href='#popup_registration'
+					) Реєстрація

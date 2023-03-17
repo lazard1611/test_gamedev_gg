@@ -1,0 +1,37 @@
+//---------------------------------------------sections
+.section {
+	position: relative;
+
+	width: 100%;
+	padding: 0 var(--gl-indent);
+
+	&.section__hero {
+		@include bp($point_4, min) {
+			padding-top: 9.6rem;
+			padding-bottom: 6rem;
+		}
+
+		@include bp($point_4 - 1) {
+			padding-top: 2.4rem;
+			padding-bottom: 5rem;
+		}
+	}
+
+	&.section__traffic {
+		@include bp($point_4, min) {
+			padding-top: 6.5rem;
+			padding-bottom: 10rem;
+		}
+
+		@include bp($point_4 - 1) {
+			padding-top: 5rem;
+			padding-bottom: 2.4rem;
+		}
+	}
+}
+
+.section_in {
+	max-width: $page_width;
+	width: 100%;
+	margin: 0 auto;
+}
