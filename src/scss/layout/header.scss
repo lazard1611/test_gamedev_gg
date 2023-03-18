@@ -13,14 +13,6 @@
 
 	background: $body_bg;
 	border-bottom: 1px solid $gray_700;
-
-	@include bp($point_4, min) {
-		padding: 2.4rem var(--gl-indent);
-	}
-
-	@include bp($point_4 - 1) {
-		padding: 1rem var(--gl-indent);
-	}
 }
 
 .header__in {
@@ -30,19 +22,22 @@
 
 	@include bp($point_4, min) {
 		justify-content: flex-end;
+		padding: 2.4rem var(--gl-indent);
 	}
 
 	@include bp($point_4 - 1) {
 		justify-content: space-between;
+		padding: 1rem var(--gl-indent);
 	}
 }
 
 .header__logo {
+	display: block;
 	@include bp($point_4, min) {
 		position: absolute;
 		left: 50%;
-		top: 0;
-		transform: translateX(-50%);
+		top: 50%;
+		transform: translate(-50%, -50%);
 
 		width: 22.2rem;
 	}

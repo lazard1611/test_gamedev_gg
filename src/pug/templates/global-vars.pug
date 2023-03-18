@@ -11,9 +11,13 @@ mixin no_use(array)
 		id: 'popup_registration',
 		input_list: [
 			{
+				type: 'text',
+				id: 'input_name',
 				placeholder: 'Ваше імʼя',
 			},
 			{
+				type: 'email',
+				id: 'input_email',
 				placeholder: 'Ваш email',
 			},
 		],
@@ -21,10 +25,12 @@ mixin no_use(array)
 			{
 				placeholder: 'Ваш пароль',
 				id: 'popup_reg_password',
+				label: 'Пароль має містити літери і символи'
 			},
 			{
 				placeholder: 'Повторіть пароль',
 				id: 'popup_reg_password_repeat',
+				label: 'Паролі не співпадають'
 			}
 		]
 	}

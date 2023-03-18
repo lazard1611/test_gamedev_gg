@@ -12,9 +12,9 @@ mixin popup(data)
 					.card_popup__content
 						.card_popup__content_col.card_popup__content_col--v1_mod
 							.card_popup__content_decor_top
-								img(src='images/graph_slider.svg' alt='popup decor')
+								img.card_popup__content_decor_img(src='images/graph_slider.svg' alt='popup decor')
 							.card_popup__content_decor_bottom
-								img(src='images/lines_slider.svg' alt='popup decor')
+								img.card_popup__content_decor_img(src='images/lines_slider.svg' alt='popup decor')
 							.card_popup__content_col_in
 								include ../../blocks/slider
 
@@ -28,28 +28,33 @@ mixin popup(data)
 							form.card_popup__form
 								.card_popup__regist
 									each item, index in data.input_list
-										+form_input({
-											block_class: 'card_popup_form__block',
-											class: 'card_popup_form__input',
-											type: 'text',
-											placeholder: item.placeholder,
-											title: 'Popup form',
-											id: `card_popup_form__input_v${index}`,
-											required: true,
-										})
+										.card_popup_form__block
+											.card_popup_form__input_wrap
+												input.card_popup_form__input(
+													id= item.id,
+													type=item.type,
+													placeholder= item.placeholder
+													required
+												)
+												.card_popup_form__icon.card_popup_form__icon--check_mod
+													+icon('check', 'icon--size_mod')
 									each item in data.type_password
 										.card_popup_form__block_password
-											input.card_popup_form__input.card_popup_form__input--password_mod(
-												id= item.id,
-												type='password',
-												placeholder= item.placeholder
-											)
-											button.card_popup__button_show_pass.btnShowPass(
-												type='button',
-												aria-label='show password',
-												data-input-id=item.id
-											)
-												+icon('eye', 'icon--size_mod')
+											.card_popup_form__input_wrap
+												input.card_popup_form__input.card_popup_form__input--password_mod(
+													id= item.id,
+													type='password',
+													placeholder= item.placeholder
+												)
+												button.card_popup__button_show_pass.btnShowPass(
+													type='button',
+													aria-label='show password',
+													data-input-id=item.id
+												)
+													+icon('eye', 'icon--size_mod')
+												.card_popup_form__icon
+													+icon('close_circle', 'icon--size_mod')
+											label.card_popup_form__label= item.label
 
 								.card_popup__bottom
 									.card_popup__bottom_title Оберіть спосіб звязку
@@ -67,8 +72,9 @@ mixin popup(data)
 											id: 'card_popup_form__input_telegram',
 											required: true,
 										})
+
 								.card_popup__btn_wrap
-									button.btn.btn__primary.btn__medium(type='submit') Реєстрація
+									button.btn.btn__primary.btn__medium(id= 'submit' type='submit') Реєстрація
 
 				if data.login
 					.card_popup__logon_wrap

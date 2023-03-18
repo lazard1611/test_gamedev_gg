@@ -1,6 +1,7 @@
 {
 	"author": "Glivera-team",
 	"name": "glivera-webpack-template",
+	"homepage": "https://lazard1611.github.io/test_gamedev_gg/",
 	"version": "1.0.0",
 	"description": "Webpack 5, pug, scss, svg sprite template",
 	"scripts": {
@@ -15,7 +16,8 @@
 		"js-lint": "eslint ./src --config",
 		"pretty": "npx prettier --check .",
 		"pretty:fix": "npx prettier --write .",
-		"lint": "npx lint-staged --quiet"
+		"lint": "npx lint-staged --quiet",
+		"deploy": "gh-pages -d build"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.16.0",
@@ -43,6 +45,7 @@
 		"eslint-plugin-react": "^7.27.0",
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"eslint-webpack-plugin": "^3.1.1",
+		"gh-pages": "^5.0.0",
 		"husky": "^8.0.0",
 		"image-minimizer-webpack-plugin": "^3.2.2",
 		"image-webpack-loader": "^8.1.0",

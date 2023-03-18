@@ -17,6 +17,7 @@ const initPopup = (btn, popup, content, close) => {
 				el.style.paddingRight = `${lockPaddingValue}px`;
 			});
 		}
+
 		$body.style.paddingRight = `${lockPaddingValue}px`;
 		$body.classList.add('body--popup_open');
 
@@ -31,7 +32,8 @@ const initPopup = (btn, popup, content, close) => {
 			if ($lockPadding.length > 0) {
 				$lockPadding.forEach((item) => {
 					const el = item;
-					el.style.paddingRight = '0px';
+					el.removeAttribute('style');
+					// el.style.paddingRight = '0px';
 				});
 			}
 			$body.style.paddingRight = '0px';

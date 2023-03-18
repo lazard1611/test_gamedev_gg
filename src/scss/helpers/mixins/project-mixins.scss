@@ -33,11 +33,12 @@
 	pointer-events: none;
 	transition: opacity 0.3s; // значение милисекунд должно совпадать с "const timeout" (300) в initPopup.js
 
-	z-index: 1000;
+	z-index: -100;
 
 	&.active_state {
 		opacity: 1;
 		pointer-events: initial;
+		z-index: 100;
 	}
 
 	@include bp($point_4, min) {
