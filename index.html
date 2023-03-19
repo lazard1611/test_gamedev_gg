@@ -41,12 +41,12 @@
     <div class="wrapper">
       <div class="base">
         <div class="main_decor__wrap">
-          <div class="main_decor main_decor--pos_1_mod"><img class="main_decor__img" src="images/main_decor_1.svg" alt="decor"></div>
-          <div class="main_decor main_decor--pos_2_mod"><img class="main_decor__img" src="images/main_decor_2.svg" alt="decor"></div>
-          <div class="main_decor main_decor--pos_3_mod"><img class="main_decor__img" src="images/main_decor_3.svg" alt="decor"></div>
-          <div class="main_decor main_decor--pos_4_mod"><img class="main_decor__img" src="images/main_decor_4.svg" alt="decor"></div>
-          <div class="main_decor main_decor--pos_5_mod"><img class="main_decor__img" src="images/main_decor_5.svg" alt="decor"></div>
-          <div class="main_decor main_decor--pos_6_mod"><img class="main_decor__img" src="images/main_decor_6.svg" alt="decor"></div>
+          <div class="main_decor main_decor--pos_1_mod js-parallax-item"><img class="main_decor__img" src="images/main_decor_1.svg" alt="decor"></div>
+          <div class="main_decor main_decor--pos_2_mod js-parallax-item"><img class="main_decor__img" src="images/main_decor_2.svg" alt="decor"></div>
+          <div class="main_decor main_decor--pos_3_mod js-parallax-item"><img class="main_decor__img" src="images/main_decor_3.svg" alt="decor"></div>
+          <div class="main_decor main_decor--pos_4_mod js-parallax-item"><img class="main_decor__img" src="images/main_decor_4.svg" alt="decor"></div>
+          <div class="main_decor main_decor--pos_5_mod js-parallax-item"><img class="main_decor__img" src="images/main_decor_5.svg" alt="decor"></div>
+          <div class="main_decor main_decor--pos_6_mod js-parallax-item"><img class="main_decor__img" src="images/main_decor_6.svg" alt="decor"></div>
         </div>
         <section class="section section__hero">
           <div class="section_in">
@@ -146,21 +146,21 @@
         </section>
       </div>
     </div>
-    <div class="card_popup popupCard" id="popup_registration">
-      <div class="card_popup__in">
-        <div class="card_popup__content_wrap popupCardContent">
-          <button class="card_popup__close popupCardClose" type="button" aria-label="close">
-            <div class="card_popup__close_icon">
+    <div class="popup popupCard" id="popup_registration">
+      <div class="popup__in">
+        <div class="popup__content_wrap popupCardContent">
+          <button class="popup__close popupCardClose" type="button" aria-label="close">
+            <div class="popup__close_icon">
               <svg class="icon icon_close icon--size_mod">
                 <use xlink:href="images/sprite/sprite.svg#close"></use>
               </svg>
             </div>
           </button>
-          <div class="card_popup__content">
-            <div class="card_popup__content_col card_popup__content_col--v1_mod">
-              <div class="card_popup__content_decor_top"><img class="card_popup__content_decor_img" src="images/graph_slider.svg" alt="popup decor"></div>
-              <div class="card_popup__content_decor_bottom"><img class="card_popup__content_decor_img" src="images/lines_slider.svg" alt="popup decor"></div>
-              <div class="card_popup__content_col_in">
+          <div class="popup__content">
+            <div class="popup__content_col popup__content_col--v1_mod">
+              <div class="popup__content_decor_top"><img class="popup__content_decor_img" src="images/graph_slider.svg" alt="popup decor"></div>
+              <div class="popup__content_decor_bottom"><img class="popup__content_decor_img" src="images/lines_slider.svg" alt="popup decor"></div>
+              <div class="popup__content_col_in">
                 <div class="slider">
                   <div class="swiper sliderInit">
                     <div class="swiper-wrapper">
@@ -330,93 +330,93 @@
                 </div>
               </div>
             </div>
-            <div class="card_popup__content_col card_popup__content_col--v2_mod">
-              <div class="card_popup__head">
-                <div class="card_popup__head_icon_wrap card_popup__head_icon_wrap--color_green_mod">
-                  <div class="card_popup__head_icon">
+            <div class="popup__content_col popup__content_col--v2_mod">
+              <div class="popup__head">
+                <div class="popup__head_icon_wrap popup__head_icon_wrap--color_green_mod">
+                  <div class="popup__head_icon">
                     <svg class="icon icon_user icon--size_mod">
                       <use xlink:href="images/sprite/sprite.svg#user"></use>
                     </svg>
                   </div>
                 </div>
-                <h2 class="card_popup__head_title">Реєстрація</h2>
+                <h2 class="popup__head_title">Реєстрація</h2>
               </div>
-              <form class="card_popup__form">
-                <div class="card_popup__regist">
-                  <div class="card_popup_form__block">
-                    <div class="card_popup_form__input_wrap">
-                      <input class="card_popup_form__input" id="input_name" type="text" placeholder="Ваше імʼя" required>
-                      <div class="card_popup_form__icon card_popup_form__icon--check_mod">
+              <form class="popup__form">
+                <div class="popup__regist">
+                  <div class="popup_form__block">
+                    <div class="popup_form__input_wrap">
+                      <input class="popup_form__input" id="input_name" type="text" placeholder="Ваше імʼя" required>
+                      <div class="popup_form__icon popup_form__icon--check_mod">
                         <svg class="icon icon_check icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#check"></use>
                         </svg>
                       </div>
                     </div>
                   </div>
-                  <div class="card_popup_form__block">
-                    <div class="card_popup_form__input_wrap">
-                      <input class="card_popup_form__input" id="input_email" type="email" placeholder="Ваш email" required>
-                      <div class="card_popup_form__icon card_popup_form__icon--check_mod">
+                  <div class="popup_form__block">
+                    <div class="popup_form__input_wrap">
+                      <input class="popup_form__input" id="input_email" type="email" placeholder="Ваш email" required>
+                      <div class="popup_form__icon popup_form__icon--check_mod">
                         <svg class="icon icon_check icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#check"></use>
                         </svg>
                       </div>
                     </div>
                   </div>
-                  <div class="card_popup_form__block_password">
-                    <div class="card_popup_form__input_wrap">
-                      <input class="card_popup_form__input card_popup_form__input--password_mod" id="popup_reg_password" type="password" placeholder="Ваш пароль">
-                      <button class="card_popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password">
+                  <div class="popup_form__block_password">
+                    <div class="popup_form__input_wrap">
+                      <input class="popup_form__input popup_form__input--password_mod" id="popup_reg_password" type="password" placeholder="Ваш пароль">
+                      <button class="popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password">
                         <svg class="icon icon_eye icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#eye"></use>
                         </svg>
                       </button>
-                      <div class="card_popup_form__icon">
+                      <div class="popup_form__icon">
                         <svg class="icon icon_close_circle icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#close_circle"></use>
                         </svg>
                       </div>
                     </div>
-                    <label class="card_popup_form__label">Пароль має містити літери і символи</label>
+                    <label class="popup_form__label">Пароль має містити літери і символи</label>
                   </div>
-                  <div class="card_popup_form__block_password">
-                    <div class="card_popup_form__input_wrap">
-                      <input class="card_popup_form__input card_popup_form__input--password_mod" id="popup_reg_password_repeat" type="password" placeholder="Повторіть пароль">
-                      <button class="card_popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password_repeat">
+                  <div class="popup_form__block_password">
+                    <div class="popup_form__input_wrap">
+                      <input class="popup_form__input popup_form__input--password_mod" id="popup_reg_password_repeat" type="password" placeholder="Повторіть пароль">
+                      <button class="popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password_repeat">
                         <svg class="icon icon_eye icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#eye"></use>
                         </svg>
                       </button>
-                      <div class="card_popup_form__icon">
+                      <div class="popup_form__icon">
                         <svg class="icon icon_close_circle icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#close_circle"></use>
                         </svg>
                       </div>
                     </div>
-                    <label class="card_popup_form__label">Паролі не співпадають</label>
+                    <label class="popup_form__label">Паролі не співпадають</label>
                   </div>
                 </div>
-                <div class="card_popup__bottom">
-                  <div class="card_popup__bottom_title">Оберіть спосіб звязку</div>
-                  <div class="card_popup__bottom_social"><a class="card_popup__bottom_social_item" href="#">
-                      <div class="card_popup__bottom_social_icon">
+                <div class="popup__bottom">
+                  <div class="popup__bottom_title">Оберіть спосіб звязку</div>
+                  <div class="popup__bottom_social"><a class="popup__bottom_social_item" href="#">
+                      <div class="popup__bottom_social_icon">
                         <svg class="icon icon_telegram icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#telegram"></use>
                         </svg>
-                      </div></a><a class="card_popup__bottom_social_item" href="#">
-                      <div class="card_popup__bottom_social_icon">
+                      </div></a><a class="popup__bottom_social_item" href="#">
+                      <div class="popup__bottom_social_icon">
                         <svg class="icon icon_skype icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#skype"></use>
                         </svg>
                       </div></a>
-                    <div class="card_popup_form__block">
+                    <div class="popup_form__block">
                       <div class="form_input__field">
-                        <input class="card_popup_form__input" type="text" id="card_popup_form__input_telegram" placeholder="@телеграм_адреса" required>
+                        <input class="popup_form__input" type="text" id="popup_form__input_telegram" placeholder="@телеграм_адреса" required>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="card_popup__btn_wrap">
+                <div class="popup__btn_wrap">
                   <button class="btn btn__primary btn__medium" id="submit" type="submit">Реєстрація</button>
                 </div>
               </form>
@@ -425,42 +425,44 @@
         </div>
       </div>
     </div>
-    <div class="card_popup popupCard" id="popup_login">
-      <div class="card_popup__in">
-        <div class="card_popup__content_wrap popupCardContent">
-          <button class="card_popup__close popupCardClose" type="button" aria-label="close">
-            <div class="card_popup__close_icon">
+    <div class="popup popupCard" id="popup_login">
+      <div class="popup__in">
+        <div class="popup__content_wrap popupCardContent">
+          <button class="popup__close popupCardClose" type="button" aria-label="close">
+            <div class="popup__close_icon">
               <svg class="icon icon_close icon--size_mod">
                 <use xlink:href="images/sprite/sprite.svg#close"></use>
               </svg>
             </div>
           </button>
-          <div class="card_popup__logon_wrap">
-            <div class="card_popup__head">
-              <div class="card_popup__head_icon_wrap card_popup__head_icon_wrap--color_orange_mod">
-                <div class="card_popup__head_icon">
+          <div class="popup__logon_wrap">
+            <div class="popup__head">
+              <div class="popup__head_icon_wrap popup__head_icon_wrap--color_orange_mod">
+                <div class="popup__head_icon">
                   <svg class="icon icon_lock icon--size_mod">
                     <use xlink:href="images/sprite/sprite.svg#lock"></use>
                   </svg>
                 </div>
               </div>
-              <h3 class="card_popup__head_title">Вхід</h3>
+              <h3 class="popup__head_title">Вхід</h3>
             </div>
-            <form class="card_popup__form">
-              <div class="card_popup_form__block">
+            <form class="popup__form">
+              <div class="popup_form__block">
                 <div class="form_input__field">
-                  <input class="card_popup_form__input" type="text" id="card_popup_form__input" placeholder="Ваш email" required>
+                  <input class="popup_form__input" type="text" id="popup_form__input" placeholder="Ваш email" required>
                 </div>
               </div>
-              <div class="card_popup_form__block_password">
-                <input class="card_popup_form__input card_popup_form__input--password_mod" id="card_popup_form__password" type="password" placeholder="Ваш пароль">
-                <button class="card_popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="card_popup_form__password">
-                  <svg class="icon icon_eye icon--size_mod">
-                    <use xlink:href="images/sprite/sprite.svg#eye"></use>
-                  </svg>
-                </button>
+              <div class="popup_form__block_password">
+                <div class="popup_form__input_wrap">
+                  <input class="popup_form__input popup_form__input--password_mod" id="popup_form__password" type="password" placeholder="Ваш пароль">
+                  <button class="popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_form__password">
+                    <svg class="icon icon_eye icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <div class="card_popup__btn_wrap">
+              <div class="popup__btn_wrap">
                 <button class="btn btn__primary btn__medium" type="submit">Війти</button>
               </div>
             </form>
