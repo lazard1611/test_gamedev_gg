@@ -669,7 +669,7 @@
                 <div class="popup__regist">
                   <div class="popup_form__block">
                     <div class="popup_form__input_wrap">
-                      <input class="popup_form__input" id="input_name" type="text" placeholder="Ваше імʼя" required>
+                      <input class="popup_form__input" id="input_name" type="text" placeholder="Ваше імʼя">
                       <div class="popup_form__icon popup_form__icon--check_mod">
                         <svg class="icon icon_check icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#check"></use>
@@ -679,7 +679,7 @@
                   </div>
                   <div class="popup_form__block">
                     <div class="popup_form__input_wrap">
-                      <input class="popup_form__input" id="input_email" type="email" placeholder="Ваш email" required>
+                      <input class="popup_form__input" id="input_email" type="email" placeholder="Ваш email">
                       <div class="popup_form__icon popup_form__icon--check_mod">
                         <svg class="icon icon_check icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#check"></use>
@@ -687,35 +687,45 @@
                       </div>
                     </div>
                   </div>
-                  <div class="popup_form__block_password">
+                  <div class="popup_form__block">
                     <div class="popup_form__input_wrap">
-                      <input class="popup_form__input popup_form__input--password_mod" id="popup_reg_password" type="password" placeholder="Ваш пароль">
+                      <input class="popup_form__input" id="popup_reg_password" type="password" placeholder="Ваш пароль">
+                      <div class="popup_form__icon popup_form__icon--check_mod">
+                        <svg class="icon icon_check icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#check"></use>
+                        </svg>
+                      </div>
+                      <div class="popup_form__icon popup_form__icon--close_mod">
+                        <svg class="icon icon_close_circle icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#close_circle"></use>
+                        </svg>
+                      </div>
                       <button class="popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password">
                         <svg class="icon icon_eye icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#eye"></use>
                         </svg>
                       </button>
-                      <div class="popup_form__icon">
+                    </div>
+                    <label class="popup_form__label">Пароль має містити літери і символи</label>
+                  </div>
+                  <div class="popup_form__block">
+                    <div class="popup_form__input_wrap">
+                      <input class="popup_form__input" id="popup_reg_password_repeat" type="password" placeholder="Повторіть пароль">
+                      <div class="popup_form__icon popup_form__icon--check_mod">
+                        <svg class="icon icon_check icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#check"></use>
+                        </svg>
+                      </div>
+                      <div class="popup_form__icon popup_form__icon--close_mod">
                         <svg class="icon icon_close_circle icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#close_circle"></use>
                         </svg>
                       </div>
-                    </div>
-                    <label class="popup_form__label">Пароль має містити літери і символи</label>
-                  </div>
-                  <div class="popup_form__block_password">
-                    <div class="popup_form__input_wrap">
-                      <input class="popup_form__input popup_form__input--password_mod" id="popup_reg_password_repeat" type="password" placeholder="Повторіть пароль">
                       <button class="popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="popup_reg_password_repeat">
                         <svg class="icon icon_eye icon--size_mod">
                           <use xlink:href="images/sprite/sprite.svg#eye"></use>
                         </svg>
                       </button>
-                      <div class="popup_form__icon">
-                        <svg class="icon icon_close_circle icon--size_mod">
-                          <use xlink:href="images/sprite/sprite.svg#close_circle"></use>
-                        </svg>
-                      </div>
                     </div>
                     <label class="popup_form__label">Паролі не співпадають</label>
                   </div>
@@ -734,8 +744,13 @@
                         </svg>
                       </div></a>
                     <div class="popup_form__block">
-                      <div class="form_input__field">
-                        <input class="popup_form__input" type="text" id="popup_form__input_telegram" placeholder="@телеграм_адреса" required>
+                      <div class="popup_form__input_wrap">
+                        <input class="popup_form__input" id="popup_form__input_telegram" type="text" placeholder="@телеграм_адреса">
+                        <div class="popup_form__icon popup_form__icon--check_mod">
+                          <svg class="icon icon_check icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#check"></use>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
