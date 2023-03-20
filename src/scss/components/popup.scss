@@ -1,15 +1,15 @@
 @import 'ScssHelpers/helpers-all.scss';
 
-.card_popup {
+.popup {
 	@include popup;
 }
 
-.card_popup__in {
+.popup__in {
 	@include flex_block(row, wrap, center, center);
 	width: 100%;
 }
 
-.card_popup__close {
+.popup__close {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -26,18 +26,18 @@
 	cursor: pointer;
 }
 
-.card_popup__close_icon {
+.popup__close_icon {
 	width: 2.4rem;
 	height: 2.4rem;
 	color: $gray_500;
 	transition: color .3s ease;
 
-	.card_popup__close:hover & {
+	.popup__close:hover & {
 		color: $white;
 	}
 }
 
-.card_popup__content_wrap {
+.popup__content_wrap {
 	width: 100%;
 	position: relative;
 
@@ -74,17 +74,17 @@
 	}
 }
 //============Content slider==========
-.card_popup__content {
+.popup__content {
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
 	flex-wrap: wrap;
 }
 
-.card_popup__content_col {
+.popup__content_col {
 	overflow: hidden;
 
-	&.card_popup__content_col--v1_mod {
+	&.popup__content_col--v1_mod {
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -107,7 +107,7 @@
 		}
 	}
 
-	&.card_popup__content_col--v2_mod {
+	&.popup__content_col--v2_mod {
 
 		@include bp($point_4, min) {
 			padding: 6rem 4.5rem 4.5rem;
@@ -124,12 +124,12 @@
 	}
 }
 
-.card_popup__content_col_in {
+.popup__content_col_in {
 	flex: auto;
 	padding: 6.4rem 5.3rem 16rem;
 }
 
-.card_popup__content_decor_top {
+.popup__content_decor_top {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -138,7 +138,7 @@
 	height: 16.8rem;
 }
 
-.card_popup__content_decor_bottom {
+.popup__content_decor_bottom {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -147,21 +147,21 @@
 	height: 16.1rem;
 }
 
-.card_popup__content_decor_img {
+.popup__content_decor_img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.card_popup__bottom,
-.card_popup__regist {
+.popup__bottom,
+.popup__regist {
 	&:not(:last-child) {
 		margin-bottom: 2.6rem;
 	}
 }
 
-.card_popup__bottom_title {
+.popup__bottom_title {
 	font-weight: 700;
 	font-size: 1.2rem;
 	line-height: 1;
@@ -174,13 +174,13 @@
 	}
 }
 
-.card_popup__bottom_social {
+.popup__bottom_social {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.card_popup__bottom_social_item {
+.popup__bottom_social_item {
 	width: 4.5rem;
 	height: 4.5rem;
 	flex-shrink: 0;
@@ -203,18 +203,18 @@
 	}
 }
 
-.card_popup__bottom_social_icon {
+.popup__bottom_social_icon {
 	width: 2.5rem;
 	height: 2.5rem;
 }
 
 //===============Login==============
 
-.card_popup__logon_wrap {
+.popup__logon_wrap {
 	width: 100%;
 }
 
-.card_popup__head {
+.popup__head {
 	#popup_registration & {
 		@include bp($point_4, min) {
 			text-align: center;
@@ -241,7 +241,7 @@
 	}
 }
 
-.card_popup__head_icon_wrap {
+.popup__head_icon_wrap {
 	width: 4.5rem;
 	height: 4.5rem;
 	flex-shrink: 0;
@@ -252,11 +252,11 @@
 	border-radius: 1.5rem;
 	overflow: hidden;
 
-	&.card_popup__head_icon_wrap--color_orange_mod {
+	&.popup__head_icon_wrap--color_orange_mod {
 		background-color: $primary_orange;
 	}
 
-	&.card_popup__head_icon_wrap--color_green_mod {
+	&.popup__head_icon_wrap--color_green_mod {
 		background-color: $primary_green;
 	}
 
@@ -283,12 +283,12 @@
 	}
 }
 
-.card_popup__head_icon {
+.popup__head_icon {
 	width: 2.5rem;
 	height: 2.5rem;
 }
 
-.card_popup__head_title {
+.popup__head_title {
 	font-family: $font_2;
 	font-weight: 700;
 	line-height: 1;
@@ -297,27 +297,21 @@
 	color: $white;
 }
 
-.card_popup__form {
+.popup__form {
 	width: 100%;
 }
 
-.card_popup_form__block {
+.popup_form__block {
 	&:not(:last-child) {
 		margin-bottom: 1rem;
 	}
 }
 
-.card_popup_form__block_password {
-	&:not(:last-child) {
-		margin-bottom: 1rem;
-	}
-}
-
-.card_popup_form__input_wrap {
+.popup_form__input_wrap {
 	position: relative;
 }
 
-.card_popup_form__input {
+.popup_form__input {
 	width: 100%;
 	padding: 1.3rem 4.2rem 1.3rem 1.6rem;
 
@@ -342,13 +336,14 @@
 
 	.warning_state & {
 		border-color: $primary_orange;
+		color: $primary_orange;
 	}
 
-	&[type="email"]:valid {
+	&.is_validate {
 		border-color: $primary_green;
 	}
 
-	&[type="email"]:valid + .card_popup_form__icon {
+	&.is_validate + .popup_form__icon--check_mod {
 		display: block;
 		color: $primary_green;
 	}
@@ -359,7 +354,7 @@
 	}
 }
 
-.card_popup__button_show_pass {
+.popup__button_show_pass {
 	z-index: 1;
 	position: absolute;
 	top: 50%;
@@ -383,7 +378,7 @@
 	}
 }
 
-.card_popup_form__icon {
+.popup_form__icon {
 	display: none;
 	z-index: 1;
 	position: absolute;
@@ -393,17 +388,23 @@
 	width: 2.4rem;
 	height: 2.4rem;
 
-	&.card_popup_form__icon--check_mod {
+	&.popup_form__icon--check_mod {
 		width: 1.4rem;
 		height: 1.4rem;
+
+		.warning_state & {
+			display: none;
+		}
 	}
 
-	.warning_state & {
-		display: block;
+	&.popup_form__icon--close_mod {
+		.warning_state & {
+			display: block;
+		}
 	}
 }
 
-.card_popup_form__label {
+.popup_form__label {
 	padding: 0 1.6rem;
 	font-size: 1rem;
 	line-height: 1.2;
@@ -414,6 +415,6 @@
 	}
 }
 
-.card_popup__btn_wrap {
+.popup__btn_wrap {
 	text-align: center;
 }

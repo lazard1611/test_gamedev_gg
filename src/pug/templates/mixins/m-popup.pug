@@ -1,107 +1,102 @@
 mixin popup(data)
-	.card_popup.popupCard(id=data.id)
-		.card_popup__in
-			.card_popup__content_wrap.popupCardContent
-				button.card_popup__close.popupCardClose(
+	.popup.popupCard(id=data.id)
+		.popup__in
+			.popup__content_wrap.popupCardContent
+				button.popup__close.popupCardClose(
 					type='button',
 					aria-label='close'
 				)
-					.card_popup__close_icon
+					.popup__close_icon
 						+icon('close', 'icon--size_mod')
 				if data.input_list
-					.card_popup__content
-						.card_popup__content_col.card_popup__content_col--v1_mod
-							.card_popup__content_decor_top
-								img.card_popup__content_decor_img(src='images/graph_slider.svg' alt='popup decor')
-							.card_popup__content_decor_bottom
-								img.card_popup__content_decor_img(src='images/lines_slider.svg' alt='popup decor')
-							.card_popup__content_col_in
+					.popup__content
+						.popup__content_col.popup__content_col--v1_mod
+							.popup__content_decor_top
+								img.popup__content_decor_img(src='images/graph_slider.svg' alt='popup decor')
+							.popup__content_decor_bottom
+								img.popup__content_decor_img(src='images/lines_slider.svg' alt='popup decor')
+							.popup__content_col_in
 								include ../../blocks/slider
 
-						.card_popup__content_col.card_popup__content_col--v2_mod
-							.card_popup__head
-								.card_popup__head_icon_wrap.card_popup__head_icon_wrap--color_green_mod
-									.card_popup__head_icon
+						.popup__content_col.popup__content_col--v2_mod
+							.popup__head
+								.popup__head_icon_wrap.popup__head_icon_wrap--color_green_mod
+									.popup__head_icon
 										+icon('user', 'icon--size_mod')
-								h2.card_popup__head_title Реєстрація
+								h2.popup__head_title Реєстрація
 
-							form.card_popup__form
-								.card_popup__regist
-									each item, index in data.input_list
-										.card_popup_form__block
-											.card_popup_form__input_wrap
-												input.card_popup_form__input(
+							form.popup__form
+								.popup__regist
+									each item in data.input_list
+										.popup_form__block
+											.popup_form__input_wrap
+												input.popup_form__input(
 													id= item.id,
-													type=item.type,
+													type= item.type,
 													placeholder= item.placeholder
-													required
 												)
-												.card_popup_form__icon.card_popup_form__icon--check_mod
+												.popup_form__icon.popup_form__icon--check_mod
 													+icon('check', 'icon--size_mod')
-									each item in data.type_password
-										.card_popup_form__block_password
-											.card_popup_form__input_wrap
-												input.card_popup_form__input.card_popup_form__input--password_mod(
-													id= item.id,
-													type='password',
-													placeholder= item.placeholder
-												)
-												button.card_popup__button_show_pass.btnShowPass(
-													type='button',
-													aria-label='show password',
-													data-input-id=item.id
-												)
-													+icon('eye', 'icon--size_mod')
-												.card_popup_form__icon
-													+icon('close_circle', 'icon--size_mod')
-											label.card_popup_form__label= item.label
+												if (item.type === 'password')
+													.popup_form__icon.popup_form__icon--close_mod
+														+icon('close_circle', 'icon--size_mod')
+												if (item.type === 'password')
+													button.popup__button_show_pass.btnShowPass(
+														type='button',
+														aria-label='show password',
+														data-input-id=item.id
+													)
+														+icon('eye', 'icon--size_mod')
+											if item.label
+												label.popup_form__label= item.label
 
-								.card_popup__bottom
-									.card_popup__bottom_title Оберіть спосіб звязку
-									.card_popup__bottom_social
+								.popup__bottom
+									.popup__bottom_title Оберіть спосіб звязку
+									.popup__bottom_social
 										each icon in ['telegram', 'skype']
-											a.card_popup__bottom_social_item(href="#")
-												.card_popup__bottom_social_icon
+											a.popup__bottom_social_item(href="#")
+												.popup__bottom_social_icon
 													+icon(icon, 'icon--size_mod')
-										+form_input({
-											block_class: 'card_popup_form__block',
-											class: 'card_popup_form__input',
-											type: 'text',
-											placeholder: '@телеграм_адреса',
-											title: 'Popup form',
-											id: 'card_popup_form__input_telegram',
-											required: true,
-										})
+										.popup_form__block
+											.popup_form__input_wrap
+												input.popup_form__input(
+													id= 'popup_form__input_telegram',
+													type= 'text',
+													placeholder= '@телеграм_адреса'
+												)
+												.popup_form__icon.popup_form__icon--check_mod
+													+icon('check', 'icon--size_mod')
 
-								.card_popup__btn_wrap
+								.popup__btn_wrap
 									button.btn.btn__primary.btn__medium(id= 'submit' type='submit') Реєстрація
 
 				if data.login
-					.card_popup__logon_wrap
-						.card_popup__head
-							.card_popup__head_icon_wrap.card_popup__head_icon_wrap--color_orange_mod
-								.card_popup__head_icon
+					.popup__logon_wrap
+						.popup__head
+							.popup__head_icon_wrap.popup__head_icon_wrap--color_orange_mod
+								.popup__head_icon
 									+icon('lock', 'icon--size_mod')
-							h3.card_popup__head_title Вхід
-						form.card_popup__form
+							h3.popup__head_title Вхід
+						form.popup__form
 							+form_input({
-								block_class: 'card_popup_form__block',
-								class: 'card_popup_form__input',
+								block_class: 'popup_form__block',
+								class: 'popup_form__input',
 								type: 'text', placeholder: 'Ваш email',
 								title: 'Popup form',
-								id: 'card_popup_form__input',
+								id: 'popup_form__input',
 								required: true,
 							})
-							.card_popup_form__block_password
-								input#card_popup_form__password.card_popup_form__input.card_popup_form__input--password_mod(
-									type='password',
-									placeholder='Ваш пароль'
-								)
-								button.card_popup__button_show_pass.btnShowPass(
-									type='button',
-									aria-label='show password',
-									data-input-id='card_popup_form__password'
-								)
-									+icon('eye', 'icon--size_mod')
-							.card_popup__btn_wrap
+							.popup_form__block_password
+								.popup_form__input_wrap
+									input#popup_form__password.popup_form__input.popup_form__input--password_mod(
+										type='password',
+										placeholder='Ваш пароль'
+									)
+									button.popup__button_show_pass.btnShowPass(
+										type='button',
+										aria-label='show password',
+										data-input-id='popup_form__password'
+									)
+										+icon('eye', 'icon--size_mod')
+							.popup__btn_wrap
 								button.btn.btn__primary.btn__medium(type='submit') Війти
