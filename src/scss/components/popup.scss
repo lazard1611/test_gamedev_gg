@@ -5,8 +5,23 @@
 }
 
 .popup__in {
-	@include flex_block(row, wrap, center, center);
-	width: 100%;
+	@include bp($point_2, min) {
+		margin: auto;
+	}
+
+	@include bp($point_3) {
+		margin-top: auto;
+	}
+
+	#popup_login & {
+		width: 35.5rem;
+		height: 28.4rem;
+	}
+
+	#popup_registration & {
+		width: 77rem;
+		height: 60rem;
+	}
 }
 
 .popup__close {
@@ -154,6 +169,12 @@
 	object-fit: cover;
 }
 
+.popup__regist {
+	>:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
 .popup__bottom,
 .popup__regist {
 	&:not(:last-child) {
@@ -299,12 +320,14 @@
 
 .popup__form {
 	width: 100%;
+
+	>:not(:last-child) {
+		margin-bottom: 1rem;
+	}
 }
 
 .popup_form__block {
-	&:not(:last-child) {
-		margin-bottom: 1rem;
-	}
+
 }
 
 .popup_form__input_wrap {
